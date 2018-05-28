@@ -14,17 +14,6 @@ import time
 
 
 
-#commands
-commands = [
-    'sleep 3',
-    'ls -l /',
-    'find /',
-    'sleep 4',
-    'find /usr',
-    'date',
-    'sleep 5',
-    'uptime'
-]
 
 #display data from runCommands
 def displayReport(data):
@@ -86,27 +75,19 @@ def runCommands(cmds):
     
     
 if __name__ == '__main__':
-          
-    data = runCommands(commands)
-    displayReport(data)
     
-
-#print("Processes Ended, retcode: ",p.returncode)
-
-
-#Get stdout as a list of strings
-#tempdata = p.stdout.read()
-
-#test output
-#print(tempdata)
-#
-
-
-
-
-
-
-
-
-
-
+    #commands
+    commands = [
+        'sleep 3',
+        'ls -l /',
+        'find /',
+        'sleep 4',
+        'find /usr',
+        'date',
+        'sleep 5',
+        'uptime'
+        ]
+    #run commands
+    data = runCommands(commands)
+    #display statistics for execution
+    displayReport(data)
