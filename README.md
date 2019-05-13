@@ -1,2 +1,2 @@
 # InternAssignmentMonumentLabs
-An Intern assignment for a intern position at Monument Labs
+An Intern assignment for an intern position at Monument Labs
